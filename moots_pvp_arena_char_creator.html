@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+            <h2>
+                The Moots PvP Arena Character Application Form™
+            </h2>
+            <form>
+                <div class='row'>
+                    <div class='col-6'>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Name of Character</label>
+                            <input id="name" class="form-control" type="text" required>
+                            <label for="owner" class="col-form-label">Owner</label>
+                            <input id="owner" class="form-control" type="text" required>
+                            <label for="char_desc" class="col-form-label">Description (optional)</label>
+                            <textarea id="char_desc" class="form-control" rows="5"></textarea> 
+                        </div>
+                    </div>
+                    <div class='col-6'>
+                        <div class='form-group'>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <input id='total_cost' class='form-check-input' type="hidden" value='0'>
+                    <span>Total points remaining: <span id="points">50</span></span>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="str" class="col-form-label">Strength <span id="strval">0</span></label>
+                            <input id="str" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#strval').html($(this).val())">
+
+                            <label for="int" class="col-form-label">Intelligence <span id="intval">0</span></label>
+                            <input id="int" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#intval').html($(this).val())">
+
+                            <label for="agi" class="col-form-label">Agility <span id="agival">0</span></label>
+                            <input id="agi" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#agival').html($(this).val())">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="dex" class="col-form-label">Dexterity <span id="dexval">0</span></label>
+                            <input id="dex" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#dexval').html($(this).val())">
+
+                            <label for="eva" class="col-form-label">Evasion <span id="evaval">0</span></label>
+                            <input id="eva" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#evaval').html($(this).val())">
+
+                            <label for="luc" class="col-form-label">Luck <span id="lucval">0</span></label>
+                            <input id="luc" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#lucval').html($(this).val())">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="sta" class="col-form-label">Dexterity <span id="staval">0</span></label>
+                            <input id="sta" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#staval').html($(this).val())">
+
+                            <label for="con" class="col-form-label">Evasion <span id="conval">0</span></label>
+                            <input id="con" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#conval').html($(this).val())">
+
+                            <label for="wil" class="col-form-label">Luck <span id="wilval">0</span></label>
+                            <input id="wil" class="form-control" type="range" min="0" max="9" step="1" value="0" onInput="$('#wilval').html($(this).val())">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="moots_pvp_arena_char_creator.js" type="text/javascript"></script>
+</html>
